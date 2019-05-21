@@ -8,7 +8,27 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
+
 export class AppComponent {
+
+  public appPages = [
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'log-in'
+    },
+    {
+      title: 'Register',
+      url: '/register',
+      icon: 'person-add'
+    },
+    {
+      title: 'Logout',
+      url: '/logout',
+      icon: 'log-out'
+    }
+  ];
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -23,4 +43,5 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
 }

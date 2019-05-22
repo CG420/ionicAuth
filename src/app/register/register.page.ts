@@ -56,6 +56,8 @@ export class RegisterPage implements OnInit {
     this.authService.register(this.user).subscribe(
       (response) => {
         this.response(response);
+        console.log(response);
+        console.log(this.user);
       }
     );
   

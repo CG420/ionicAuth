@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 
 import { AuthService } from '../auth.service';
 import { User } from '../user';
+import { timingSafeEqual } from 'crypto';
 
 @Component({
   selector: 'app-login',
@@ -35,6 +36,8 @@ export class LoginPage implements OnInit {
     this.authService.logIn(this.user).subscribe(
       (response) => {
         this.response(response);
+        console.log(response);
+        console.log(this.user);
       }
     );
   }

@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 
 import { AuthService } from '../auth.service';
 import { User } from '../user';
-import { timingSafeEqual } from 'crypto';
+
 
 @Component({
   selector: 'app-login',
@@ -28,7 +28,7 @@ export class LoginPage implements OnInit {
     }
 
     if(response.success===true){
-      window.location.href = '/';
+      window.location.href = '/home';
     }
   }
 

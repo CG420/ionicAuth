@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   
-  { path: '', redirectTo: 'logout', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'logout', loadChildren: './logout/logout.module#LogoutPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },

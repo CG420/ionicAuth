@@ -13,14 +13,19 @@ export class AppComponent {
 
   public appPages = [
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'log-in'
+      title: 'Home',
+      url: '/home',
+      icon: 'home'
     },
     {
       title: 'Register',
       url: '/register',
       icon: 'person-add'
+    },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'log-in'
     },
     {
       title: 'Logout',
